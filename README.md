@@ -1,5 +1,9 @@
 # bloomfilter
 
+## Note
+
+This is a fork of [OldPanda/bloomfilter](https://github.com/OldPanda/bloomfilter). We’re using this library at Hinge and needed a version without a CGO dependency to simplify deployment. After evaluating the impact on precision, we found the false positive rate remained low and stable for our use case, so we’ve chosen to proceed with the CGO-free implementation. Huge thanks to the original author for the excellent work and Java Guava compatibility — it’s been a great foundation for us.
+
 ![Build](https://github.com/OldPanda/bloomfilter/actions/workflows/build.yml/badge.svg)
 [![codecov](https://codecov.io/gh/OldPanda/bloomfilter/branch/master/graph/badge.svg?token=FCV788SCL7)](https://codecov.io/gh/OldPanda/bloomfilter)
 [![Go Reference](https://pkg.go.dev/badge/github.com/OldPanda/bloomfilter.svg)](https://pkg.go.dev/github.com/OldPanda/bloomfilter)
