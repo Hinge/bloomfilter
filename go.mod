@@ -1,4 +1,4 @@
-module github.com/OldPanda/bloomfilter
+module github.com/Hinge/bloomfilter
 
 go 1.16
 
